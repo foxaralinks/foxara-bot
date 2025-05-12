@@ -2,3 +2,5 @@ python3-dev
 gcc
 libffi-dev
 libssl-dev
+libjpeg-dev
+zlib1g-dev
