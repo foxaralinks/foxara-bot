@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 # Configuration
 DEEPINFRA_API_KEY = "1lO8eP244oEOuuxz5oDMBCGD6ljCzIef"
-TOKEN = 'YOUR_BOT_TOKEN_HERE'
+TOKEN = os.getenv("TOKEN")  # Replace the hardcoded token
 
 
 # With these direct values (replace with your actual IDs)
@@ -894,4 +894,5 @@ async def on_ready():
     await bot.tree.sync()
     print("Bot is ready!")
 
-bot.run('')
+bot.run(TOKEN)
+
